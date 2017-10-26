@@ -91,7 +91,7 @@ class Person extends \Faker\Provider\Person
      * @param string|null $gender 'male', 'female' or null for any
      * @example 'Чанталиев'
      */
-    public function lastName($gender = null)
+    public static function lastName($gender = null)
     {
         if ($gender === static::GENDER_MALE) {
             return static::lastNameMale();
